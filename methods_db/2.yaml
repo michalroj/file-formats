@@ -1,1 +1,32 @@
 # Version 2 of the spec.
+---
+file_format: michalroj/file-formats/methods_db
+file_format_version: '2'
+id: string
+name: string
+name_pl: string
+tags: string
+description_en: string
+description_pl: string
+incident_id: string
+incident_descr_en: string
+incident_descr_pl: string
+incident_name_en: string
+incident_name_pl: string
+tools_pl: string
+ipr_description_pl: string
+ipr_status: string
+ipr_description: string
+ipr_refs_list: string
+incident_def_severity: string
+incident_def_timeout: string
+incident_def_key: string
+config_param1: string
+config_param1_descr: string
+config_param1_default_val: string
+config_param2: string
+config_param2_descr: string
+config_param2_default_val: string
+config_param3: string
+config_param3_descr: string
+config_param3_default_val: string
