@@ -1,0 +1,22 @@
+{
+  "file_format": "michalroj/file-formats/notes/general",
+  "file_format_version": "1",
+  "noteTitle": "string",
+  "noteContent": "string",
+  "noteType": "string",
+  "domain": "string",
+  "project": "string",
+  "context": "string",
+  "kw1": "string",
+  "kw2": "string",
+  "kw3": "string",
+  "kw4": "string",
+  "kw5": "string",
+  "kw6": "string",
+  "creationDate": "string",
+  "modificationDate": "string",
+  "lastAccessDate": "string",
+  "guid": "string",
+  "comments": null,
+  "ontologyEntities": null
+}
