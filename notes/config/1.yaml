@@ -1,0 +1,4 @@
+---
+file_format: michalroj/file-formats/notes/config
+file_format_version: '1'
+working_directory: string
