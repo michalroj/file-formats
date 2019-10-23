@@ -1,6 +1,12 @@
 {
     "file_format": "michalroj/file-formats/notes/config",
     "file_format_version": "1",
+
+    "working_directory": "string",
+    "cache_file": "string",
     
-    "working_directory": "string"
+    "default_domains": "array",
+    "default_contexts": "array",
+    "default_projects": "array",
+    "default_note_types": "array"
 }
