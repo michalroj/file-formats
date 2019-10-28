@@ -20,6 +20,6 @@
         "cementary": "string",
 
         "facts": []
-    },
-    ...
+    }
+    ]
 }
