@@ -1,0 +1,25 @@
+{
+  "file_format": "michalroj/file-formats/genealog",
+  "file_format_version": "1",
+  "data": [
+    {
+        "id": "string",
+        "name": "string",
+        "birthDate": "string",
+        "birthPlace": "string",
+        "father": "string",
+        "mother": "string",
+        "basicPic": "string",
+        "level": "string",
+        "location": "string",
+        "pics": [],
+        "children": [],
+        "alive": "boolean",
+        "deathDate": "string",
+        "deathPlace": "string",
+        "cementary": "string",
+
+        "facts": []
+    },
+    ...
+}
