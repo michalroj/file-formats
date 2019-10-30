@@ -1,0 +1,7 @@
+---
+file_format: michalroj/file-formats/genealog/config
+file_format_version: '1'
+database_name: string
+initial_individual: string
+evidence_metadata_dir: string
+evidence_media_dir: string
