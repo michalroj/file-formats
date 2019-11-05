@@ -1,0 +1,18 @@
+---
+file_format: michalroj/file-formats/progect-metadata
+file_format_version: 1-pl
+Etapy:
+- numer: integer
+  id: string
+  nazwa skrócona: string
+  miesiąc rozpoczęcia: integer
+  miesiąc zakończenia: integer
+  ryzyka z wniosku: string
+  ryzyka na teraz: string
+Kamienie milowe:
+- kamien milowy: string
+  nazwa: string
+  etap: string
+  miesiąc zakończenia: integer
+  efekty: []
+  ryzyka: []
