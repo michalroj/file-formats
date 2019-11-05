@@ -1,4 +1,6 @@
 {
+  "file_format": "michalroj/file-formats/progect-metadata", 
+  "file_format_version": "1-pl",
   "Etapy": [
     {
       "numer": "integer",
