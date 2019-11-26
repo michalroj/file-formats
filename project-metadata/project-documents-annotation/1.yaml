@@ -1,8 +1,15 @@
 ---
 file_format: michalroj/file-formats/project-metadata/project-documents-annotation
 file_format_version: 1
+
+# Information about meta-data document
+this_document_date: string
+this_document_author: string
+
+# Information about source document
 date: string
 author: string
+language: string
 description: string
 contentType:
   type: string
@@ -21,9 +28,11 @@ contentType:
 domain: string # cybersecurity, IoT, ...
 project: string
 keywords: []
-used_in: string
 comment: string
 status: string # some recommended values should be proposed (such as 'recommended version', 'deprecated', 'to be fixed')
+used_in: string
 related_to: [] # other documents (UUIDs)
+
 uuid: string
 path: string
+fileType: string
