@@ -1,8 +1,11 @@
 {
   "file_format": "michalroj/file-formats/project-metadata/project-documents-annotation",
   "file_format_version": 1,
+  "this_document_date": "string",
+  "this_document_author": "string",
   "date": "string",
   "author": "string",
+  "language": "string",
   "description": "string",
   "contentType": {
     "type": "string",
@@ -25,12 +28,13 @@
   "keywords": [
 
   ],
-  "used_in": "string",
   "comment": "string",
   "status": "string",
+  "used_in": "string",
   "related_to": [
 
   ],
   "uuid": "string",
-  "path": "string"
+  "path": "string",
+  "fileType": "string"
 }
