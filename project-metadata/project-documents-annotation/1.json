@@ -5,6 +5,7 @@
   "this_document_author": "string",
   "date": "string",
   "author": "string",
+  "title": "string",
   "language": "string",
   "description": "string",
   "contentType": {
