@@ -9,6 +9,7 @@ this_document_author: string
 # Information about source document
 date: string
 author: string
+title: string
 language: string
 description: string
 contentType:
