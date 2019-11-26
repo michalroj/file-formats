@@ -17,12 +17,12 @@ contentType:
   - results and analyses
   - reports
   - presentations
-domain: string
+domain: string # cybersecurity, IoT, ...
 project: string
 keywords: []
 used_in: string
 comment: string
-status: string
-related_to: []
+status: string # some recommended values should be proposed (such as 'recommended version', 'deprecated', 'to be fixed')
+related_to: [] # other documents (UUIDs)
 uuid: string
 path: string
