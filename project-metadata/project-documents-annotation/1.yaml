@@ -36,4 +36,4 @@ related_to: [] # other documents (UUIDs)
 
 uuid: string
 path: string
-fileType: string
+fileType: string  # a MIME type is recommended, e.g., application/msword, application/mspowerpoint, application/pdf, text/plain
