@@ -1,24 +1,24 @@
 {
   "file_format": "michalroj/file-formats/project-metadata/project-documents-annotation",
   "file_format_version": 1,
-  
   "date": "string",
   "author": "string",
   "description": "string",
   "contentType": {
-    		"type": "string", 
-        "enum": [    				
-           	"background",
-    				"rationale",
-    				"use case",
-    				"market search",
-    				"state-of-the-art analysis",
-    				"bibliographic sources",
-    				"roadmaps and plans",
-    				"results and analyses",
-    				"reports",
-    				"presentations"
-  			]
+    "type": "string",
+    "enum": [
+      "background",
+      "rationale",
+      "use case",
+      "market",
+      "state-of-the-art analysis",
+      "bibliographic sources",
+      "roadmaps and plans",
+      "technical approach",
+      "results and analyses",
+      "reports",
+      "presentations"
+    ]
   },
   "domain": "string",
   "project": "string",
