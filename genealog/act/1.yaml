@@ -13,6 +13,7 @@ chrz_Notatka: string
 chrz_Ojciec: string
 dataPodpisaniaAktu: string
 jezykAktu: string
+numerAktu: string
 kopieDokumentow: string
 miejscePodpisaniaAktu: string
 nazwiskoUrzednika: string
