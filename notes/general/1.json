@@ -1,22 +1,100 @@
 {
-  "file_format": "michalroj/file-formats/notes/general",
-  "file_format_version": "1",
-  "noteTitle": "string",
-  "noteContent": "string",
-  "noteType": "string",
-  "domain": "string",
-  "project": "string",
-  "context": "string",
-  "kw1": "string",
-  "kw2": "string",
-  "kw3": "string",
-  "kw4": "string",
-  "kw5": "string",
-  "kw6": "string",
-  "creationDate": "string",
-  "modificationDate": "string",
-  "lastAccessDate": "string",
-  "guid": "string",
-  "comments": null,
-  "ontologyEntities": null
+  "$schema": "https://github.com/michalroj/file-formats/notes/general#",
+  "$ref": "#/definitions/NotesGeneral",
+  "$id": "User",
+  "definitions": {
+    "NotesGeneral": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "file_format": {
+          "type": "string"
+        },
+        "file_format_version": {
+          "type": "string"
+        },
+        "noteTitle": {
+          "type": "string"
+        },
+        "noteContent": {
+          "type": "string"
+        },
+        "noteType": {
+          "type": "string"
+        },
+        "domain": {
+          "type": "string"
+        },
+        "project": {
+          "type": "string"
+        },
+        "context": {
+          "type": "string"
+        },
+        "creationDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "modificationDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "lastAccessDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "guid": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "comments": {
+          "type": "string"
+        },
+        "ontologyEntities": {
+          "type": "string"
+        },
+        "kw1": {
+          "type": "string"
+        },
+        "kw2": {
+          "type": "string"
+        },
+        "kw3": {
+          "type": "string"
+        },
+        "kw4": {
+          "type": "string"
+        },
+        "kw5": {
+          "type": "string"
+        },
+        "kw6": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "comments",
+        "context",
+        "creationDate",
+        "domain",
+        "file_format",
+        "file_format_version",
+        "guid",
+        "kw1",
+        "kw2",
+        "kw3",
+        "kw4",
+        "kw5",
+        "kw6",
+        "lastAccessDate",
+        "modificationDate",
+        "noteContent",
+        "noteTitle",
+        "noteType",
+        "ontologyEntities",
+        "project"
+      ],
+      "title": "NotesGeneral"
+    }
+  }
 }
