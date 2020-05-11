@@ -1,9 +1,41 @@
 ---
-file_format: michalroj/file-formats/notes/config
-file_format_version: '1'
-working_directory: string
-cache_file: string
-default_domains: array
-default_contexts: array
-default_projects: array
-default_note_types: array
+"$schema": https://github.com/michalroj/file-formats/notes/config#
+"$ref": "#/definitions/NotesConfig"
+file_format: https://json-schema.org/
+file_format_version: 2019-09
+definitions:
+  NotesConfig:
+    type: object
+    additionalProperties: false
+    properties:
+      file_format:
+        type: string
+      file_format_version:
+        type: string
+        format: integer
+      working_directory:
+        type: string
+      cache_file:
+        type: string
+      default_domains:
+        type: array
+        items: {}
+      default_contexts:
+        type: array
+        items: {}
+      default_projects:
+        type: array
+        items: {}
+      default_note_types:
+        type: array
+        items: {}
+    required:
+    - cache_file
+    - default_contexts
+    - default_domains
+    - default_note_types
+    - default_projects
+    - file_format
+    - file_format_version
+    - working_directory
+    title: NotesConfig
