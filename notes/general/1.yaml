@@ -1,7 +1,7 @@
 ---
-"$schema": https://github.com/michalroj/file-formats/notes/general#
+"$schema": http://json-schema.org/draft/2019-09/schema#
+"$id": https://github.com/michalroj/file-formats/notes/general/1#
 "$ref": "#/definitions/NotesGeneral"
-"$id": User
 definitions:
   NotesGeneral:
     type: object
@@ -73,28 +73,3 @@ definitions:
     - ontologyEntities
     - project
     title: NotesGeneral
-
-
-#### My notes - ideas, facts, literature references
-#file_format: michalroj/file-formats/notes/general
-#file_format_version: '1'
-#### Main data
-#noteTitle: string
-#noteContent: string
-#noteType: string # technical idea, use case, comment, to read, reference, fact, definition
-#domain: string # wireless, AI, algorithms, ...
-#project: string # project
-#context: string # not a project, not a domain
-#### Keywords (up to 6)
-#kw1: string
-#kw2: string
-#kw3: string
-#kw4: string
-#kw5: string
-#kw6: string
-#creationDate: string 
-#modificationDate: string
-#lastAccessDate: string
-#guid: string
-#comments: null # the 'comments' structure is a list of the format [{date: date, comment: comment}, ...]
-#ontologyEntities: null # the 'ontologyEntities' has a structure in the form [{<key>: <ont. unique uri>}], where the key is one of the keys from above (noteCotent, noteType, etc.)
