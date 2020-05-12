@@ -2,6 +2,8 @@
 "$schema": http://json-schema.org/draft/2019-09/schema#
 "$id": https://github.com/michalroj/file-formats/notes/general/1#
 "$ref": "#/definitions/NotesGeneral"
+file_format: https://json-schema.org/
+file_format_version: draft/2019-09
 definitions:
   NotesGeneral:
     type: object
