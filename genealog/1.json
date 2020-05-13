@@ -38,21 +38,11 @@
                 "name": { "type": "string" },
                 "birthDate": { "type": "string" },
                 "birthPlace": { "type": "string" },
-                "father": {
-                    "type": "string"
-                },
-                "mother": {
-                    "type": "string"
-                },
-                "basicPic": {
-                    "type": "string"
-                },
-                "level": {
-                    "type": "string"
-                },
-                "location": {
-                    "type": "string"
-                },
+                "father": { "type": "string" },
+                "mother": { "type": "string" },
+                "basicPic": { "type": "string" },
+                "level": { "type": "string", "format": "integer" },
+                "location": { "type": "string" },
                 "pics": {
                     "type": "array",
                     "items": {}
@@ -61,12 +51,8 @@
                     "type": "array",
                     "items": {}
                 },
-                "alive": {
-                    "type": "string"
-                },
-                "deathDate": {
-                    "type": "string"
-                },
+                "alive": { "type": "boolean" },
+                "deathDate": { "type": "string" },
                 "deathPlace": {
                     "type": "string"
                 },
