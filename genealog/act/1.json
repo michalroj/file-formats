@@ -1,49 +1,205 @@
 {
-    "file_format": "michalroj/file-formats/genealog/act",
-    "file_format_version": "1",
-
-    "ID": "string",
-    "chrz_DataUrodzenia": "string",
-    "chrz_Imie": "string",
-    "chrz_Matka": "string",
-    "chrz_MscUrodzenia": "string",
-    "chrz_MscZamieszkRodzicow": "string",
-    "chrz_Nazwisko": "string",
-    "chrz_NazwiskoRodoweMatki": "string",
-    "chrz_Notatka": "string",
-    "chrz_Ojciec": "string",
-    "dataPodpisaniaAktu": "string",
-    "jezykAktu": "string",
-    "numerAktu": "string",
-    "kopieDokumentow": "string",
-    "miejscePodpisaniaAktu": "string",
-    "nazwiskoUrzednika": "string",
-    "slub_MazIloscLat": "string",
-    "slub_MazImie": "string",
-    "slub_MazMatka": "string",
-    "slub_MazMscUrodzenia": "string",
-    "slub_MazNazwisko": "string",
-    "slub_MazNazwiskoRodoweMatki": "string",
-    "slub_MazOjciec": "string",
-    "slub_Notatka": "string",
-    "slub_ZonaIloscLat": "string",
-    "slub_ZonaImie": "string",
-    "slub_ZonaMatka": "string",
-    "slub_ZonaMscUrodzenia": "string",
-    "slub_ZonaNazwisko": "string",
-    "slub_ZonaNazwiskoRodoweMatki": "string",
-    "slub_ZonaOjciec": "string",
-    "typAktu": "string",
-    "urlAktu": "string",
-    "urzadParafia": "string",
-    "zgon_IloscLat": "string",
-    "zgon_Imie": "string",
-    "zgon_Matka": "string",
-    "zgon_MscSmierci": "string",
-    "zgon_MscUrodzenia": "string",
-    "zgon_MscZamieszkania": "string",
-    "zgon_Nazwisko": "string",
-    "zgon_NazwiskoRodoweMatki": "string",
-    "zgon_Notatka": "string",
-    "zgon_Ojciec": "string"
+    "$schema": "http://json-schema.org/draft/2019-09/schema#",
+    "$ref": "#/definitions/GenealogAct",
+    "$id": "https://github.com/michalroj/file-formats/genealog/act/1#",
+    "file_format": "https://json-schema.org/",
+    "file_format_version": "draft/2019-09",
+    "definitions": {
+        "GenealogAct": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "file_format": {
+                    "type": "string"
+                },
+                "file_format_version": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "ID": {
+                    "type": "string"
+                },
+                "chrz_DataUrodzenia": {
+                    "type": "string"
+                },
+                "chrz_Imie": {
+                    "type": "string"
+                },
+                "chrz_Matka": {
+                    "type": "string"
+                },
+                "chrz_MscUrodzenia": {
+                    "type": "string"
+                },
+                "chrz_MscZamieszkRodzicow": {
+                    "type": "string"
+                },
+                "chrz_Nazwisko": {
+                    "type": "string"
+                },
+                "chrz_NazwiskoRodoweMatki": {
+                    "type": "string"
+                },
+                "chrz_Notatka": {
+                    "type": "string"
+                },
+                "chrz_Ojciec": {
+                    "type": "string"
+                },
+                "dataPodpisaniaAktu": {
+                    "type": "string"
+                },
+                "jezykAktu": {
+                    "type": "string"
+                },
+                "numerAktu": {
+                    "type": "string"
+                },
+                "kopieDokumentow": {
+                    "type": "string"
+                },
+                "miejscePodpisaniaAktu": {
+                    "type": "string"
+                },
+                "nazwiskoUrzednika": {
+                    "type": "string"
+                },
+                "slub_MazIloscLat": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "slub_MazImie": {
+                    "type": "string"
+                },
+                "slub_MazMatka": {
+                    "type": "string"
+                },
+                "slub_MazMscUrodzenia": {
+                    "type": "string"
+                },
+                "slub_MazNazwisko": {
+                    "type": "string"
+                },
+                "slub_MazNazwiskoRodoweMatki": {
+                    "type": "string"
+                },
+                "slub_MazOjciec": {
+                    "type": "string"
+                },
+                "slub_Notatka": {
+                    "type": "string"
+                },
+                "slub_ZonaIloscLat": {
+                    "type": "string"
+                },
+                "slub_ZonaImie": {
+                    "type": "string"
+                },
+                "slub_ZonaMatka": {
+                    "type": "string"
+                },
+                "slub_ZonaMscUrodzenia": {
+                    "type": "string"
+                },
+                "slub_ZonaNazwisko": {
+                    "type": "string"
+                },
+                "slub_ZonaNazwiskoRodoweMatki": {
+                    "type": "string"
+                },
+                "slub_ZonaOjciec": {
+                    "type": "string"
+                },
+                "typAktu": {
+                    "type": "string"
+                },
+                "urlAktu": {
+                    "type": "string"
+                },
+                "urzadParafia": {
+                    "type": "string"
+                },
+                "zgon_IloscLat": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "zgon_Imie": {
+                    "type": "string"
+                },
+                "zgon_Matka": {
+                    "type": "string"
+                },
+                "zgon_MscSmierci": {
+                    "type": "string"
+                },
+                "zgon_MscUrodzenia": {
+                    "type": "string"
+                },
+                "zgon_MscZamieszkania": {
+                    "type": "string"
+                },
+                "zgon_Nazwisko": {
+                    "type": "string"
+                },
+                "zgon_NazwiskoRodoweMatki": {
+                    "type": "string"
+                },
+                "zgon_Notatka": {
+                    "type": "string"
+                },
+                "zgon_Ojciec": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "ID",
+                "chrz_DataUrodzenia",
+                "chrz_Imie",
+                "chrz_Matka",
+                "chrz_MscUrodzenia",
+                "chrz_MscZamieszkRodzicow",
+                "chrz_Nazwisko",
+                "chrz_NazwiskoRodoweMatki",
+                "chrz_Notatka",
+                "chrz_Ojciec",
+                "dataPodpisaniaAktu",
+                "file_format",
+                "file_format_version",
+                "jezykAktu",
+                "kopieDokumentow",
+                "miejscePodpisaniaAktu",
+                "nazwiskoUrzednika",
+                "numerAktu",
+                "slub_MazIloscLat",
+                "slub_MazImie",
+                "slub_MazMatka",
+                "slub_MazMscUrodzenia",
+                "slub_MazNazwisko",
+                "slub_MazNazwiskoRodoweMatki",
+                "slub_MazOjciec",
+                "slub_Notatka",
+                "slub_ZonaIloscLat",
+                "slub_ZonaImie",
+                "slub_ZonaMatka",
+                "slub_ZonaMscUrodzenia",
+                "slub_ZonaNazwisko",
+                "slub_ZonaNazwiskoRodoweMatki",
+                "slub_ZonaOjciec",
+                "typAktu",
+                "urlAktu",
+                "urzadParafia",
+                "zgon_IloscLat",
+                "zgon_Imie",
+                "zgon_Matka",
+                "zgon_MscSmierci",
+                "zgon_MscUrodzenia",
+                "zgon_MscZamieszkania",
+                "zgon_Nazwisko",
+                "zgon_NazwiskoRodoweMatki",
+                "zgon_Notatka",
+                "zgon_Ojciec"
+            ],
+            "title": "GenealogAct"
+        }
+    }
 }
