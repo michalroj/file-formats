@@ -1,22 +1,85 @@
 ---
-file_format: michalroj/file-formats/genealog
-file_format_version: '1'
-data:
-- id: string
-  name: string
-  birthDate: string
-  birthPlace: string
-  father: string
-  mother: string
-  basicPic: string
-  level: string
-  location: string
-  pics: []
-  children: []
-  alive: boolean
-  deathDate: string
-  deathPlace: string
-  cementary: string
-  facts: []
-# more will come here 
-# the facts currently can be 'spouse', 'marrage date', 'CV', 'education', ...
+"$schema": http://json-schema.org/draft/2019-09/schema#
+"$id": https://github.com/michalroj/file-formats/genealog/1#
+"$ref": "#/definitions/Genealog"
+file_format: https://json-schema.org/
+file_format_version: draft/2019-09
+definitions:
+  Genealog:
+    type: object
+    additionalProperties: false
+    properties:
+      file_format:
+        type: string
+      file_format_version:
+        type: string
+        format: integer
+      data:
+        type: array
+        items:
+          "$ref": "#/definitions/Datum"
+    required:
+    - data
+    - file_format
+    - file_format_version
+    title: Genealog
+  Datum:
+    type: object
+    additionalProperties: false
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      birthDate:
+        type: string
+      birthPlace:
+        type: string
+      father:
+        type: string
+      mother:
+        type: string
+      basicPic:
+        type: string
+      level:
+        type: string
+        format: integer
+      location:
+        type: string
+      pics:
+        type: array
+        items: {}
+      children:
+        type: array
+        items: {}
+      alive:
+        type: boolean
+      deathDate:
+        type: string
+      deathPlace:
+        type: string
+      cementary:
+        type: string
+      facts:
+        type: array
+        items: {}
+      evidence:
+        type: string
+    required:
+    - alive
+    - basicPic
+    - birthDate
+    - birthPlace
+    - cementary
+    - children
+    - deathDate
+    - deathPlace
+    - facts
+    - father
+    - id
+    - level
+    - location
+    - mother
+    - name
+    - pics
+    title: Datum
