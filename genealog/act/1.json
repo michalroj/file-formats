@@ -68,79 +68,35 @@
                     "type": "string",
                     "format": "integer"
                 },
-                "slub_MazImie": {
-                    "type": "string"
-                },
-                "slub_MazMatka": {
-                    "type": "string"
-                },
-                "slub_MazMscUrodzenia": {
-                    "type": "string"
-                },
-                "slub_MazNazwisko": {
-                    "type": "string"
-                },
-                "slub_MazNazwiskoRodoweMatki": {
-                    "type": "string"
-                },
-                "slub_MazOjciec": {
-                    "type": "string"
-                },
-                "slub_Notatka": {
-                    "type": "string"
-                },
-                "slub_ZonaIloscLat": {
-                    "type": "string"
-                },
-                "slub_ZonaImie": {
-                    "type": "string"
-                },
-                "slub_ZonaMatka": {
-                    "type": "string"
-                },
-                "slub_ZonaMscUrodzenia": {
-                    "type": "string"
-                },
-                "slub_ZonaNazwisko": {
-                    "type": "string"
-                },
-                "slub_ZonaNazwiskoRodoweMatki": {
-                    "type": "string"
-                },
-                "slub_ZonaOjciec": {
-                    "type": "string"
-                },
-                "typAktu": {
-                    "type": "string"
-                },
-                "urlAktu": {
-                    "type": "string"
-                },
-                "urzadParafia": {
-                    "type": "string"
-                },
+                "slub_MazImie": { "type": "string" },
+                "slub_MazMatka": { "type": "string" },
+                "slub_MazMscUrodzenia": { "type": "string" },
+                "slub_MazNazwisko": { "type": "string" },
+                "slub_MazNazwiskoRodoweMatki": { "type": "string" },
+                "slub_MazOjciec": { "type": "string" },
+                "slub_Notatka": { "type": "string" },
+                "slub_ZonaIloscLat": { "type": "string" },
+                "slub_ZonaImie": { "type": "string" },
+                "slub_ZonaMatka": { "type": "string" },
+                "slub_ZonaMscUrodzenia": { "type": "string" },
+                "slub_ZonaNazwisko": { "type": "string"  },
+                "slub_ZonaNazwiskoRodoweMatki": { "type": "string" },
+                "slub_ZonaOjciec": { "type": "string" },
+                "typAktu": { "type": "string" },
+                "urlAktu": { "type": "string" },
+                "urzadParafia": { "type": "string" },
                 "zgon_IloscLat": {
                     "type": "string",
                     "format": "integer"
                 },
-                "zgon_Imie": {
-                    "type": "string"
-                },
-                "zgon_Matka": {
-                    "type": "string"
-                },
-                "zgon_MscSmierci": {
-                    "type": "string"
-                },
-                "zgon_MscUrodzenia": {
-                    "type": "string"
-                },
-                "zgon_MscZamieszkania": {
-                    "type": "string"
-                },
-                "zgon_Nazwisko": {
-                    "type": "string"
-                },
+                "zgon_Imie": { "type": "string" },
+                "zgon_Matka": { "type": "string" },
+                "zgon_MscSmierci": { "type": "string" },
+                "zgon_MscUrodzenia": { "type": "string" },
+                "zgon_MscZamieszkania": { "type": "string" },
+                "zgon_Nazwisko": {"type": "string" },
+                "zgon_NazwiskoRodowe": { "type": "string" },
+                "zgon_Data": { "type": "string" },
                 "zgon_NazwiskoRodoweMatki": {
                     "type": "string"
                 },
