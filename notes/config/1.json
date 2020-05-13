@@ -16,12 +16,10 @@
                     "type": "string",
                     "format": "integer"
                 },
-                "working_directory": {
-                    "type": "string"
-                },
-                "cache_file": {
-                    "type": "string"
-                },
+                "working_directory": { "type": "string" },
+                "cache_file": { "type": "string" },
+                "done_directory": { "type": "string" }, 
+                "trash_directory": { "type": "string" },
                 "default_domains": {
                     "type": "array",
                     "items": {}
