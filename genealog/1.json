@@ -34,18 +34,10 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "id": {
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "birthDate": {
-                    "type": "string"
-                },
-                "birthPlace": {
-                    "type": "string"
-                },
+                "id": {  "type": "string" },
+                "name": { "type": "string" },
+                "birthDate": { "type": "string" },
+                "birthPlace": { "type": "string" },
                 "father": {
                     "type": "string"
                 },
@@ -84,6 +76,9 @@
                 "facts": {
                     "type": "array",
                     "items": {}
+                },
+                "evidence": {
+                    "type": "string"
                 }
             },
             "required": [
