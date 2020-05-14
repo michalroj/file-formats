@@ -1,32 +1,106 @@
 # Version 2 of the spec.
 ---
-file_format: michalroj/file-formats/methods_db
-file_format_version: '2'
-id: string
-name: string
-name_pl: string
-tags: string
-description_en: string
-description_pl: string
-incident_id: string
-incident_descr_en: string
-incident_descr_pl: string
-incident_name_en: string
-incident_name_pl: string
-tools_pl: string
-ipr_description_pl: string
-ipr_status: string
-ipr_description: string
-ipr_refs_list: string
-incident_def_severity: string
-incident_def_timeout: string
-incident_def_key: string
-config_param1: string
-config_param1_descr: string
-config_param1_default_val: string
-config_param2: string
-config_param2_descr: string
-config_param2_default_val: string
-config_param3: string
-config_param3_descr: string
-config_param3_default_val: string
+"$schema": http://json-schema.org/draft/2019-09/schema#
+"$id": https://github.com/michalroj/file-formats/methods_db/2#
+"$ref": "#/definitions/MethodsDB"
+file_format: https://json-schema.org/
+file_format_version: draft/2019-09
+definitions:
+  MethodsDB:
+    type: object
+    additionalProperties: false
+    properties:
+      file_format:
+        enum:
+        - michalroj/file-formats/methods_db
+      file_format_version:
+        enum:
+        - '2'
+      id:
+        type: string
+      name:
+        type: string
+      name_pl:
+        type: string
+      tags:
+        type: string
+      description_en:
+        type: string
+      description_pl:
+        type: string
+      incident_id:
+        type: string
+      incident_descr_en:
+        type: string
+      incident_descr_pl:
+        type: string
+      incident_name_en:
+        type: string
+      incident_name_pl:
+        type: string
+      tools_pl:
+        type: string
+      ipr_description_pl:
+        type: string
+      ipr_status:
+        type: string
+      ipr_description:
+        type: string
+      ipr_refs_list:
+        type: string
+      incident_def_severity:
+        type: string
+      incident_def_timeout:
+        type: string
+      incident_def_key:
+        type: string
+      config_param1:
+        type: string
+      config_param1_descr:
+        type: string
+      config_param1_default_val:
+        type: string
+      config_param2:
+        type: string
+      config_param2_descr:
+        type: string
+      config_param2_default_val:
+        type: string
+      config_param3:
+        type: string
+      config_param3_descr:
+        type: string
+      config_param3_default_val:
+        type: string
+    required:
+    - config_param1
+    - config_param1_default_val
+    - config_param1_descr
+    - config_param2
+    - config_param2_default_val
+    - config_param2_descr
+    - config_param3
+    - config_param3_default_val
+    - config_param3_descr
+    - description_en
+    - description_pl
+    - file_format
+    - file_format_version
+    - id
+    - incident_def_key
+    - incident_def_severity
+    - incident_def_timeout
+    - incident_descr_en
+    - incident_descr_pl
+    - incident_id
+    - incident_name_en
+    - incident_name_pl
+    - ipr_description
+    - ipr_description_pl
+    - ipr_refs_list
+    - ipr_status
+    - name
+    - name_pl
+    - tags
+    - tools_pl
+    title: MethodsDB
