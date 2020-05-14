@@ -1,11 +1,11 @@
 ---
 "$schema": http://json-schema.org/draft/2019-09/schema#
 "$id": https://github.com/michalroj/file-formats/biblio/comments/1#
-"$ref": "#/definitions/DocFragment"
+"$ref": "#/definitions/Comment"
 file_format: https://json-schema.org/
 file_format_version: draft/2019-09
 definitions:
-  DocFragment:
+  Comment:
     type: object
     additionalProperties: false
     properties:

@@ -20,11 +20,13 @@
                 "description_lang": { "type": "string" },
                 "spacial_address": { "type": "string" },
                 "structural_address": { "type": "string" },
-                "content_copy:photo": { "type": "string" },
-                "content_copy:txt": { "type": "string" }
+                "content_copy:photo": { "type": [ "string", "null" ] },
+                "content_copy:txt": { "type": [ "string", "null" ] },
+
+                "content_copy:txt:pl" : { "type" : "string" },
+                "content_copy:txt:en" : { "type" : "string" } 
             },
             "required": [
-                "annot_doc_id",
                 "biblio_item_id",
                 "content_copy:photo",
                 "content_copy:txt",
