@@ -1,0 +1,51 @@
+# Ver. 1
+---
+"$schema": http://json-schema.org/draft/2019-09/schema#
+"$id": https://github.com/michalroj/file-formats/biblio/doc-fragments/1#
+"$ref": "#/definitions/DocFragment"
+file_format: https://json-schema.org/
+file_format_version: draft/2019-09
+definitions:
+  DocFragment:
+    type: object
+    additionalProperties: false
+    properties:
+      file_format:
+        enum:
+        - michalroj/file-formats/biblio/doc-fragments
+      file_format_version:
+        enum:
+        - '2'
+      doc_fragment_id:
+        type: string
+      biblio_item_id:
+        type: 'null'
+      annot_doc_id:
+        type: string
+        format: uuid
+      description:
+        type: string
+      description_lang:
+        type: string
+      spacial_address:
+        type: string
+      structural_address:
+        type: string
+      content_copy:photo:
+        type: string
+      content_copy:txt:
+        type: string
+    required:
+    - annot_doc_id
+    - biblio_item_id
+    - content_copy:photo
+    - content_copy:txt
+    - description
+    - description_lang
+    - doc_fragment_id
+    - file_format
+    - file_format_version
+    - spacial_address
+    - structural_address
+    title: DocFragment
+
