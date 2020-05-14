@@ -10,10 +10,11 @@ definitions:
     additionalProperties: false
     properties:
       file_format:
-        type: string
+        enum:
+        - michalroj/file-formats/genealog
       file_format_version:
-        type: string
-        format: integer
+        enum:
+        - '1'
       data:
         type: array
         items:
