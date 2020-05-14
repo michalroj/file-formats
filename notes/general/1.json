@@ -9,12 +9,8 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "file_format": {
-          "type": "string"
-        },
-        "file_format_version": {
-          "type": "string"
-        },
+        "file_format": { "enum": [ "michalroj/file-formats/notes/general" ] }, 
+        "file_format_version": { "enum" : ["1"] },
         "noteTitle": {
           "type": "string"
         },
