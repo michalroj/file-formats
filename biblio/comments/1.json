@@ -1,0 +1,45 @@
+{
+
+  "$schema": "http://json-schema.org/draft/2019-09/schema#",
+  "$id": "https://github.com/michalroj/file-formats/biblio/comments/1#",
+  "$ref": "#/definitions/DocFragment",
+
+  "file_format": "https://json-schema.org/",
+  "file_format_version": "draft/2019-09",
+
+    "definitions": {
+        "DocFragment": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "file_format": { "enum": [ "michalroj/file-formats/biblio/comments" ] }, 
+                "file_format_version": { "enum" : ["1"] },
+
+                "target_type": { "type": "string" },
+                "biblio_item_id": { "type": [ "string", "null" ] },
+                "annot_doc_id": { "type": [ "string", "null" ] },
+                "doc_fragment_id": { "type": "string" },
+                "comment_id": { "type": "string" },
+                "comment_lang": { "type": "string" },
+                "comment": { "type": "string" },
+                "keywords": { "type": "string" },
+                "domain": { "type": "string" }
+            },
+            "required": [
+                "annot_doc_id",
+                "biblio_item_id",
+                "comment",
+                "comment_id",
+                "comment_lang",
+                "doc_fragment_id",
+                "domain",
+                "file_format",
+                "file_format_version",
+                "keywords",
+                "target_type"
+            ],
+            "title": "DocFragment"
+        }
+    }
+}
+

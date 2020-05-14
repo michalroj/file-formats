@@ -1,6 +1,6 @@
 ---
 "$schema": http://json-schema.org/draft/2019-09/schema#
-"$id": https://github.com/michalroj/file-formats/biblio/doc-fragments/1#
+"$id": https://github.com/michalroj/file-formats/biblio/comments/1#
 "$ref": "#/definitions/DocFragment"
 file_format: https://json-schema.org/
 file_format_version: draft/2019-09
@@ -11,11 +11,11 @@ definitions:
     properties:
       file_format:
         enum:
-        - michalroj/file-formats/biblio/doc-fragments
+        - michalroj/file-formats/biblio/comments
       file_format_version:
         enum:
-        - '2'
-      doc_fragment_id:
+        - '1'
+      target_type:
         type: string
       biblio_item_id:
         type:
@@ -25,29 +25,29 @@ definitions:
         type:
         - string
         - 'null'
-      description:
+      doc_fragment_id:
         type: string
-      description_lang:
+      comment_id:
         type: string
-      spacial_address:
+      comment_lang:
         type: string
-      structural_address:
+      comment:
         type: string
-      content_copy:photo:
+      keywords:
         type: string
-      content_copy:txt:
+      domain:
         type: string
     required:
     - annot_doc_id
     - biblio_item_id
-    - content_copy:photo
-    - content_copy:txt
-    - description
-    - description_lang
+    - comment
+    - comment_id
+    - comment_lang
     - doc_fragment_id
+    - domain
     - file_format
     - file_format_version
-    - spacial_address
-    - structural_address
+    - keywords
+    - target_type
     title: DocFragment
 
