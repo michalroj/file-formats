@@ -9,11 +9,12 @@ definitions:
     type: object
     additionalProperties: false
     properties:
-      file_format:
-        type: string
+     file_format:
+        enum:
+        - michalroj/file-formats/notes/config
       file_format_version:
-        type: string
-        format: integer
+        enum:
+        - '1'
       working_directory:
         type: string
       cache_file:
