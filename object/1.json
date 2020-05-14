@@ -1,0 +1,44 @@
+{
+    "$ref": "#/definitions/Object",
+    "$schema": "http://json-schema.org/draft/2019-09/schema#",
+    "$id": "https://github.com/michalroj/file-formats/object/1#",
+    "file_format": "https://json-schema.org/",
+    "file_format_version": "draft/2019-09",
+    "definitions": {
+        "Object": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "file_format": { "enum": [ "michalroj/file-formats/object" ] }, 
+                "file_format_version": { "enum" : ["1"] },
+
+                "comment": { "type": "string" },
+                "description": { "type": "string" },
+                "domain": { "type": "string" },
+                "id": { "type": "string" },
+                "name": { "type": "string" },
+                "project": { "type": "string" },
+                "props_and_rels": {
+                    "type": "array",
+                    "items": {} 
+                },
+                "type1": { "type": "string" },
+                "type2": { "type": "string" }
+            },
+            "required": [
+                "comment",
+                "description",
+                "domain",
+                "file_format",
+                "file_format_version",
+                "id",
+                "name",
+                "project",
+                "props_and_rels",
+                "type1",
+                "type2"
+            ],
+            "title": "Object"
+        }
+    }
+}
