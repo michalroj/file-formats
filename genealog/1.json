@@ -9,13 +9,8 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "file_format": {
-                    "type": "string"
-                },
-                "file_format_version": {
-                    "type": "string",
-                    "format": "integer"
-                },
+                "file_format": { "enum": [ "michalroj/file-formats/genealog" ] }, 
+                "file_format_version": { "enum" : ["1"] },
                 "data": {
                     "type": "array",
                     "items": {
