@@ -1,41 +1,91 @@
 {
-  "file_format": "michalroj/file-formats/project-metadata/project-documents-annotation",
-  "file_format_version": 1,
-  "this_document_date": "string",
-  "this_document_author": "string",
-  "date": "string",
-  "author": "string",
-  "title": "string",
-  "language": "string",
-  "description": "string",
-  "contentType": {
-    "type": "string",
-    "enum": [
-      "background",
-      "rationale",
-      "use case",
-      "market",
-      "state-of-the-art analysis",
-      "bibliographic sources",
-      "roadmaps and plans",
-      "technical approach",
-      "results and analyses",
-      "reports",
-      "presentations"
-    ]
-  },
-  "domain": "string",
-  "project": "string",
-  "keywords": [
+    "$schema": "http://json-schema.org/draft/2019-09/schema#",
+    "$id": "https://github.com/michalroj/file-formats/project-metadata/project-documents-annotation/1#",
+    "$ref": "#/definitions/ProjectDocumentsAnnotation",
 
-  ],
-  "comment": "string",
-  "status": "string",
-  "used_in": "string",
-  "related_to": [
+    "file_format": "https://json-schema.org/",
+    "file_format_version": "draft/2019-09",
 
-  ],
-  "uuid": "string",
-  "path": "string",
-  "fileType": "string"
+    "definitions": {
+        "ProjectDocumentsAnnotation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "file_format": { "enum": [ "michalroj/file-formats/project-metadata/project-documents-annotation" ] }, 
+                "file_format_version": { "enum" : ["1", 1] },
+
+                "this_document_date": { "type": "string", "format": "date-time" },
+                "this_document_author": { "type": "string" },
+                "date": { "type": "string" },
+                "author": { "type": "string" },
+                "title": { "type": "string" },
+                "language": { "type": "string" },
+                "description": { "type": "string" },
+                "contentType": {
+                    "enum" : [  
+                                "background", 
+                                "bibliographic sources",
+                                "market", 
+                                "presentations",
+                                "rationale", 
+                                "reports",
+                                "results and analyses",
+                                "roadmaps and plans",
+                                "state-of-the-art analysis", 
+                                "technical approach",
+                                "use case"
+                             ]
+                },
+                "domain": { "type": "string" },
+                "project": { "type": "string" },
+                "keywords": {
+                    "type": "array",
+                    "items": {}
+                },
+                "comment": { "type": "string" },
+                "status": { "type": "string" },
+                "used_in": { "type": "string" },
+                "related_to": {
+                    "type": "array",
+                    "items": {}
+                },
+                "uuid": { "type": "string" },
+                "path": { "type": "string" },
+                "fileType": { "type": "string" },
+                "interesting_pages": {
+                     "type": "array",
+                     "items": {}
+                }, 
+                "preview": { "type": "string" }, 
+                "additional_previews": {
+                     "type": "array",
+                     "items" : {}
+                }
+            },
+            "required": [
+                "author",
+                "comment",
+                "contentType",
+                "date",
+                "description",
+                "domain",
+                "fileType",
+                "file_format",
+                "file_format_version",
+                "keywords",
+                "language",
+                "path",
+                "project",
+                "related_to",
+                "status",
+                "this_document_author",
+                "this_document_date",
+                "title",
+                "used_in",
+                "uuid"
+            ],
+            "title": "ProjectDocumentsAnnotation"
+        }
+    }
 }
+
