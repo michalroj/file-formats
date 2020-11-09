@@ -1,5 +1,7 @@
 # file-formats
-This project describes file format used in my projects.
+This project describes file formats used in my projects.
+
+## JSON 
 
 General structure of a JSON file is as follows:
 ```
