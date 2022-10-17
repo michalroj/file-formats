@@ -9,7 +9,7 @@ definitions:
     type: object
     additionalProperties: false
     properties:
-     file_format:
+      file_format:
         enum:
         - michalroj/file-formats/notes/config
       file_format_version:
